@@ -1,7 +1,12 @@
 import React from 'react';
+import { AppBar, Toolbar } from '@mui/material';
 
 function Header() {
-  return <div>todo list</div>;
+  return (
+    <AppBar>
+      <Toolbar>todo list</Toolbar>
+    </AppBar>
+  );
 }
 
 export default Header;
