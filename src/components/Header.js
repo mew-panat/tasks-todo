@@ -1,12 +1,10 @@
 import React from 'react';
 import { AppBar, Toolbar } from '@mui/material';
 
-function Header() {
+export default function Header() {
   return (
     <AppBar>
-      <Toolbar>todo list</Toolbar>
+      <Toolbar color='primary'>todo list</Toolbar>
     </AppBar>
   );
 }
-
-export default Header;
