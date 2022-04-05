@@ -7,7 +7,7 @@ export default function Header() {
       position='fixed'
       sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
     >
-      <Toolbar color='primary'>todo list</Toolbar>
+      <Toolbar color='primary'>todo lists</Toolbar>
     </AppBar>
   );
 }
