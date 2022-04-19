@@ -26,6 +26,4 @@ jobs:
       - run: echo ${{ secrets.PAT_TOKEN }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PAT_TOKEN }}
-  test_build:
-    steps:
       - run: npm run test
