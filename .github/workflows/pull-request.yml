@@ -4,6 +4,8 @@ name: Pull Request
 
 # Controls when the action will run. 
 on:
+  push:
+    branches: [ master ]
   pull_request:
     branches:
       - master
