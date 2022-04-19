@@ -27,7 +27,5 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PAT_TOKEN }}
   test_build:
-    runs-on: windows-latest
-
     steps:
-      - run: echo "mew"
+      - run: npm run test
