@@ -26,4 +26,5 @@ jobs:
       - run: echo ${{ secrets.PAT_TOKEN }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.PAT_TOKEN }}
+      - run: npm install
       - run: npm run test
