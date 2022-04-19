@@ -21,8 +21,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-      - run: echo ${{ secrets.PAT_TOKEN }}
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.PAT_TOKEN }}
+      - name: Update commit to the latest
+        run: git rebase master
       - run: npm install
       - run: npm run test
