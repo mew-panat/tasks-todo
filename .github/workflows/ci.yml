@@ -4,8 +4,9 @@ on:
   push:
     branches: 
       - master
-  pull_request:
-    types: [opened, reopened, synchronize, ready_for_review]
+  pull_request_review:
+    branches:
+      - master
 
 jobs:
   build:
